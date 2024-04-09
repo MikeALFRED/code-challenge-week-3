@@ -1,6 +1,6 @@
 // Your code here
 function filmsArray(){
-    fetch(" http://localhost:3000/films")
+    fetch("https://json-deploy-aizn.onrender.com/films")
     .then(res=>res.json())
     .then(filmsArray=>{
         displayMovieTitles(filmsArray)
@@ -80,7 +80,7 @@ function handleTicket(remainingtickets, films) {
     
 
   }  function handleDelete(films){
-    fetch(` http://localhost:3000/films/${films.id}`,{
+    fetch(` https://json-deploy-aizn.onrender.com/films/${films.id}`,{
         method:"DELETE"
     })
     .then(res=>res.json)
